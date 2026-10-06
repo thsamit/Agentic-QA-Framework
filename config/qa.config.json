@@ -1,0 +1,12 @@
+{
+  "requirementsFile": "requirements/requirements.md",
+  "targetProject": "target-project",
+  "outputDirectory": "output",
+  "baseUrl": "https://www.saucedemo.com/",
+  "browser": "chromium",
+  "headed": false,
+  "maxFixAttemptsPerTest": 3,
+  "testCommand": "npx playwright test",
+  "installDependencies": true,
+  "generateTraceOnRetry": true
+}

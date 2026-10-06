@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QA Test Cases",
+  "type": "object",
+  "required": ["testCases"],
+  "properties": {
+    "testCases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "requirementIds",
+          "title",
+          "type",
+          "steps",
+          "expectedResult",
+          "automationCandidate"
+        ],
+        "properties": {
+          "id": {"type": "string"},
+          "requirementIds": {"type": "array", "items": {"type": "string"}},
+          "title": {"type": "string"},
+          "type": {"type": "string"},
+          "preconditions": {"type": "array"},
+          "testData": {"type": "array"},
+          "steps": {"type": "array", "items": {"type": "string"}},
+          "expectedResult": {"type": "string"},
+          "automationCandidate": {"type": "boolean"}
+        }
+      }
+    },
+    "recommendations": {"type": "array"}
+  }
+}

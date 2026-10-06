@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Failure Analysis",
+  "type": "object",
+  "required": ["failures"],
+  "properties": {
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["testCaseId", "classification", "summary"],
+        "properties": {
+          "testCaseId": {"type": "string"},
+          "classification": {"type": "string"},
+          "summary": {"type": "string"},
+          "rootCause": {"type": "string"},
+          "evidence": {"type": "array"},
+          "fixApplied": {"type": "boolean"},
+          "bugCreated": {"type": "boolean"},
+          "bugId": {"type": "string"}
+        }
+      }
+    }
+  }
+}

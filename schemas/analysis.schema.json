@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QA Requirement Analysis",
+  "type": "object",
+  "required": ["application", "baseUrl", "module", "requirements"],
+  "properties": {
+    "application": {"type": "string"},
+    "baseUrl": {"type": "string"},
+    "module": {"type": "string"},
+    "feature": {"type": "string"},
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "statement"],
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "statement": {"type": "string"},
+          "expectedResult": {"type": "string"}
+        }
+      }
+    },
+    "testData": {"type": "array"},
+    "ambiguities": {"type": "array"},
+    "recommendations": {"type": "array"}
+  }
+}

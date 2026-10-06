@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Automation Plan",
+  "type": "object",
+  "required": ["pageObjects", "tests"],
+  "properties": {
+    "pageObjects": {"type": "array"},
+    "tests": {"type": "array"},
+    "fixtures": {"type": "array"},
+    "utilities": {"type": "array"},
+    "configurationChanges": {"type": "array"}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "agentic-qa-automation-framework",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Requirement-driven agentic QA automation framework using Playwright and TypeScript.",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "qa:read": "tsx tools/qa-tools.ts read",
+    "qa:list": "tsx tools/qa-tools.ts list",
+    "qa:search": "tsx tools/qa-tools.ts search",
+    "qa:run": "tsx tools/qa-tools.ts run",
+    "qa:test": "tsx tools/qa-tools.ts test",
+    "qa:diff": "tsx tools/qa-tools.ts git-diff"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "tsx": "^4.19.0"
+  }
+}
