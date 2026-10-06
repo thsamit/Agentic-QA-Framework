@@ -125,24 +125,6 @@ agent/QA_AGENT.md
 
 and execute the complete workflow.
 
-## Status
-
-Phase 1 foundation.
-
-The next phase will add the executable orchestration/tooling layer and the autonomous retry/fix loop.
-
-## Phase 2 — Tool Layer and Execution Protocol
-
-Phase 2 adds:
-
-- `config/qa.config.json`
-- `.env.example`
-- `tools/qa-tools.ts`
-- `agent/EXECUTION_PROTOCOL.md`
-- `agent/ONE_SHOT_PROMPT.md`
-
-The tool layer provides deterministic local operations for reading files, listing directories, searching the target project, running shell commands, running Playwright, and inspecting Git changes.
-
 ### Install
 
 From the framework root:
